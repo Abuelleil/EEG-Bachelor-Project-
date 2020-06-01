@@ -338,3 +338,161 @@ b = b+1;
 end
 a = a+2;
 end
+
+load('Dataset4.mat');
+
+a = 1;
+while a < 2
+b = 1;
+while b < 4
+signal(b).d = C01LRH(b,:);
+n = 1;
+x = 1;
+y = 87;
+while n < 161
+    v9(a).e(b).eeg(n).d = signal(b).d(x:y);
+    x = x+87;
+    y = y+87;
+    n = n+1;
+end
+b = b+1;
+end
+a = a+2;
+end
+
+a = 2;
+while a < 3
+b = 1;
+while b < 4
+signal(b).d = C02LRH(b,:);
+n = 1;
+x = 1;
+y = 87;
+while n < 161
+    v9(a).e(b).eeg(n).d = signal(b).d(x:y);
+    x = x+87;
+    y = y+87;
+    n = n+1;
+end
+b = b+1;
+end
+a = a+2;
+end
+
+a = 3;
+while a < 4
+b = 1;
+while b < 4
+signal(b).d = C03LRH(b,:);
+n = 1;
+x = 1;
+y = 87;
+while n < 161
+    v9(a).e(b).eeg(n).d = signal(b).d(x:y);
+    x = x+87;
+    y = y+87;
+    n = n+1;
+end
+b = b+1;
+end
+a = a+2;
+end
+
+
+a = 4;
+while a < 5
+b = 1;
+while b < 4
+signal(b).d = C04LRH(b,:);
+n = 1;
+x = 1;
+y = 87;
+while n < 161
+    v9(a).e(b).eeg(n).d = signal(b).d(x:y);
+    x = x+87;
+    y = y+87;
+    n = n+1;
+end
+b = b+1;
+end
+a = a+2;
+end
+
+load('Dataset5.mat');
+
+a = 1;
+while a < 2
+b = 1;
+while b < 4
+signal(b).d = D01T(b,:);
+n = 1;
+x = 1;
+y = 87;
+while n < 161
+    v10(a).e(b).eeg(n).d = signal(b).d(x:y);
+    x = x+87;
+    y = y+87;
+    n = n+1;
+end
+b = b+1;
+end
+a = a+2;
+end
+
+a = 2;
+while a < 3
+b = 1;
+while b < 4
+signal(b).d = D02T(b,:);
+n = 1;
+x = 1;
+y = 87;
+while n < 161
+    v10(a).e(b).eeg(n).d = signal(b).d(x:y);
+    x = x+87;
+    y = y+87;
+    n = n+1;
+end
+b = b+1;
+end
+a = a+2;
+end
+
+a = 3;
+while a < 4
+b = 1;
+while b < 4
+signal(b).d = D03T(b,:);
+n = 1;
+x = 1;
+y = 87;
+while n < 161
+    v10(a).e(b).eeg(n).d = signal(b).d(x:y);
+    x = x+87;
+    y = y+87;
+    n = n+1;
+end
+b = b+1;
+end
+a = a+2;
+end
+
+
+a = 4;
+while a < 5
+b = 1;
+while b < 4
+signal(b).d = D04T(b,:);
+n = 1;
+x = 1;
+y = 87;
+while n < 161
+    v10(a).e(b).eeg(n).d = signal(b).d(x:y);
+    x = x+87;
+    y = y+87;
+    n = n+1;
+end
+b = b+1;
+end
+a = a+2;
+end
