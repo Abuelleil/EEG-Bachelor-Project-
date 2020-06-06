@@ -64,85 +64,7 @@ end
 a = a+2;
 end
 
-load('Dataset4Movements.mat');
-load('Dataset4Movements2.mat');
-load('Dataset4Movements3.mat');
-load('Dataset4Movements4.mat');
-a = 1;
-while a < 2
-b = 1;
-while b < 4
-signal(b).d = A01LH(b,:);
-n = 1;
-x = 1;
-y = 87;
-while n < 161
-    v4(a).e(b).eeg(n).d = signal(b).d(x:y);
-    x = x+87;
-    y = y+87;
-    n = n+1;
-end
-b = b+1;
-end
-a = a+2;
-end
-
-a = 2;
-while a < 3
-b = 1;
-while b < 4
-signal(b).d = A02LH(b,:);
-n = 1;
-x = 1;
-y = 87;
-while n < 161
-    v4(a).e(b).eeg(n).d = signal(b).d(x:y);
-    x = x+87;
-    y = y+87;
-    n = n+1;
-end
-b = b+1;
-end
-a = a+2;
-end
-
-a = 1;
-while a < 2
-b = 1;
-while b < 4
-signal(b).d = A01RH(b,:);
-n = 1;
-x = 1;
-y = 87;
-while n < 161
-    v5(a).e(b).eeg(n).d = signal(b).d(x:y);
-    x = x+87;
-    y = y+87;
-    n = n+1;
-end
-b = b+1;
-end
-a = a+2;
-end
-
-a = 2;
-while a < 3
-b = 1;
-while b < 4
-signal(b).d = A02RH(b,:);
-n = 1;
-x = 1;
-y = 87;
-while n < 161
-    v5(a).e(b).eeg(n).d = signal(b).d(x:y);
-    x = x+87;
-    y = y+87;
-    n = n+1;
-end
-b = b+1;
-end
-a = a+2;
-end
+load('Dataset2.mat');
 
 a = 1;
 while a < 2
@@ -222,43 +144,6 @@ a = a+2;
 end
 
 
-a = 1;
-while a < 2
-b = 1;
-while b < 4
-signal(b).d = A01T(b,:);
-n = 1;
-x = 1;
-y = 87;
-while n < 161
-    v7(a).e(b).eeg(n).d = signal(b).d(x:y);
-    x = x+87;
-    y = y+87;
-    n = n+1;
-end
-b = b+1;
-end
-a = a+2;
-end
-
-a = 2;
-while a < 3
-b = 1;
-while b < 4
-signal(b).d = A02T(b,:);
-n = 1;
-x = 1;
-y = 87;
-while n < 161
-    v7(a).e(b).eeg(n).d = signal(b).d(x:y);
-    x = x+87;
-    y = y+87;
-    n = n+1;
-end
-b = b+1;
-end
-a = a+2;
-end
 
 load('Dataset3.mat');
 

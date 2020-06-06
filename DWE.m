@@ -1,10 +1,11 @@
 EpochSignal;
+
 a = 1;
 h=1;
 
-sa(1).d = v3(7).e(13); %Dataset1.1, Fist, C3 Channel
-sa(2).d = v3(7).e(13); %Dataset1.2, Fist, C3 Channel 
-sa(3).d = v3(7).e(13); %Dataset1.3, Fist, C3 Channel
+sa(1).d = v3(1).e(13); %Dataset1.1, Fist, C3 Channel
+sa(2).d = v3(3).e(13); %Dataset1.2, Fist, C3 Channel 
+sa(3).d = v3(5).e(13); %Dataset1.3, Fist, C3 Channel
 sa(4).d = v3(7).e(13); %Dataset1.4, Fist, C3 Channel 
 sa(5).d = v6(1).e(1);  %Dataset2.1 , Foot, C3 Channel
 sa(6).d = v6(2).e(1);  %Dataset2.2 , Foot, C3 Channel
@@ -22,9 +23,9 @@ sa(17).d = v10(1).e(1);  %Dataset5.1 , Tongue, C3 Channel
 sa(18).d = v10(2).e(1);  %Dataset5.2 , Tongue, C3 Channel
 sa(19).d = v10(3).e(1);  %Dataset5.3 , Tongue, C3 Channel
 sa(20).d = v10(4).e(1);  %Dataset5.4 , Tongue, C3 Channel
-sa(21).d = v3(7).e(50); %Dataset1.1, Fist, C4 Channel
-sa(22).d = v3(7).e(50); %Dataset1.2, Fist, C4 Channel
-sa(23).d = v3(7).e(50); %Dataset1.3, Fist, C4 Channel
+sa(21).d = v3(1).e(50); %Dataset1.1, Fist, C4 Channel
+sa(22).d = v3(3).e(50); %Dataset1.2, Fist, C4 Channel
+sa(23).d = v3(5).e(50); %Dataset1.3, Fist, C4 Channel
 sa(24).d = v3(7).e(50); %Dataset1.4, Fist, C4 Channel
 sa(25).d = v6(1).e(3);  %Dataset2.1 , Foot, C4 Channel
 sa(26).d = v6(2).e(3);  %Dataset2.2 , Foot, C4 Channel
@@ -42,9 +43,9 @@ sa(37).d = v10(1).e(1);  %Dataset5.1 , Tongue, C4 Channel
 sa(38).d = v10(2).e(1);  %Dataset5.2 , Tongue, C4 Channel
 sa(39).d = v10(3).e(1);  %Dataset5.3 , Tongue, C4 Channel
 sa(40).d = v10(4).e(1);  %Dataset5.4 , Tongue, C4 Channel
-sa(41).d = v3(7).e(48); %Dataset1.1, Fist, Cz Channel
-sa(42).d = v3(7).e(48); %Dataset1.2, Fist, Cz Channel
-sa(43).d = v3(7).e(48); %Dataset1.3, Fist, Cz Channel
+sa(41).d = v3(1).e(48); %Dataset1.1, Fist, Cz Channel
+sa(42).d = v3(3).e(48); %Dataset1.2, Fist, Cz Channel
+sa(43).d = v3(5).e(48); %Dataset1.3, Fist, Cz Channel
 sa(44).d = v3(7).e(48); %Dataset1.4, Fist, Cz Channel
 sa(45).d = v6(1).e(2);  %Dataset2.1 , Foot, CZ Channel
 sa(46).d = v6(2).e(2);  %Dataset2.2 , Foot, CZ Channel
@@ -62,13 +63,16 @@ sa(57).d = v10(1).e(1);  %Dataset5.1 , Tongue, CZ Channel
 sa(58).d = v10(2).e(1);  %Dataset5.2 , Tongue, CZ Channel
 sa(59).d = v10(3).e(1);  %Dataset5.3 , Tongue, CZ Channel
 sa(60).d = v10(4).e(1);  %Dataset5.4 , Tongue, CZ Channel
+
 fs = 160; % Sampling frequency
+
 waveletFunction = 'db4';
+
 f = 1;
 b = 1;
+
 while a < 21
 sb = sa(a).d;
-
 while b < 161
 s = sb.eeg(b).d;
 N=length(s);
@@ -85,7 +89,6 @@ while c < 6
 AE(h,c) = E(h).d(c);
 c = c+1;
 end
-
 h = h+1;
 e = e+1;
 end
@@ -93,9 +96,9 @@ a = a+1;
 b=1;
 end
 b = 1;
+
 while a < 41
 sb = sa(a).d;
-
 while b < 161
 s = sb.eeg(b).d;
 N=length(s);
@@ -105,7 +108,6 @@ E(f).d = Ed;
 f = f+1;
 b = b+1;
 end
-
 e=1;
 while e<161
 c=1;
@@ -120,9 +122,9 @@ a = a+1;
 b=1;
 end
 b = 1;
+
 while a < 61
 sb = sa(a).d;
-
 while b < 161
 s = sb.eeg(b).d;
 N=length(s);
@@ -132,7 +134,6 @@ E(f).d = Ed;
 f = f+1;
 b = b+1;
 end
-
 e=1;
 while e<161    
 c=1;
@@ -184,8 +185,5 @@ while t < 7681
     end
     
 end
-
-
-
 
 save('EEGENERGY.mat','AE');

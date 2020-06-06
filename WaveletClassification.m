@@ -1,0 +1,13 @@
+DWE;
+[trainedClassifier, validationAccuracy] = BaggedTrees(AE);
+TestModel1;
+yfit1 = trainedClassifier.predictFcn(TestResult1);
+TestModel2;
+yfit2 = trainedClassifier.predictFcn(TestResult2);
+TestModel3;
+yfit3 = trainedClassifier.predictFcn(TestResult3);
+TestModel4;
+yfit4 = trainedClassifier.predictFcn(TestResult4);
+TestModel5;
+yfit5 = trainedClassifier.predictFcn(TestResult5);
+TestingAccuracy;
